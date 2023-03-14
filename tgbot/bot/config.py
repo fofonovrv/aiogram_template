@@ -20,8 +20,8 @@ TG_AMINN_ACC = '@example'
 LOG_GILE = logging.FileHandler('logs/info.log')
 LOG_CONSOLE = logging.StreamHandler()
 
+handler_rotation = RotatingFileHandler('logs/info.log', mode='a',maxBytes=1000, backupCount=5)
 logging.basicConfig(handlers=(LOG_GILE, LOG_CONSOLE), 
 	format='[%(asctime)s | %(levelname)s]: %(message)s', 
 	datefmt='%d.%m.%Y %H:%M:%S',
 	level=logging.INFO)
-handler_rotation = RotatingFileHandler('logs/info.log', maxBytes=1000, backupCount=5)
