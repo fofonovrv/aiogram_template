@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  bot:
+    build: ./tgbot/
+    command: python3 run.py
+    volumes:
+      - ./tgbot:/tgbot
+    env_file: .env

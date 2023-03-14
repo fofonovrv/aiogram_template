@@ -1,0 +1,13 @@
+.env
+.tgbot/bot/__pycache__
+.tgbot/bot/database/__pycache__
+.tgbot/bot/database/methods/__pycache__
+.tgbot/bot/handlers/__pycache__
+.tgbot/bot/keyboards/__pycache__
+.tgbot/bot/utils/__pycache__
+.venv
+*.log
+*.pot
+*.pyc
+db.sqlite3
+.vscode
